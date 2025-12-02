@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 ol,
 ul,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 h1,
@@ -35,469 +35,503 @@ ul,
 ol,
 img,
 a {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    /* Gray color */
-    --color-gray-00: #FFFFFF;
-    --color-gray-50: #F2F4F5;
-    --color-gray-100: #E4E7E9;
-    --color-gray-200: #C9CFD2;
-    --color-gray-300: #ADB7BC;
-    --color-gray-400: #929FA5;
-    --color-gray-500: #77878F;
-    --color-gray-600: #5F6C72;
-    --color-gray-700: #475156;
-    --color-gray-800: #303639;
-    --color-gray-900: #191C1F;
+  /* Gray color */
+  --color-gray-00: #ffffff;
+  --color-gray-50: #f2f4f5;
+  --color-gray-100: #e4e7e9;
+  --color-gray-200: #c9cfd2;
+  --color-gray-300: #adb7bc;
+  --color-gray-400: #929fa5;
+  --color-gray-500: #77878f;
+  --color-gray-600: #5f6c72;
+  --color-gray-700: #475156;
+  --color-gray-800: #303639;
+  --color-gray-900: #191c1f;
 
-    /* Primary color */
-    --color-Primary-50: #FFF3EB;
-    --color-Primary-100: #FFE7D6;
-    --color-Primary-200: #FFCEAD;
-    --color-Primary-300: #FFB685;
-    --color-Primary-400: #FF9D5C;
-    --color-Primary-500: #FA8232;
-    --color-Primary-600: #DE732D;
-    --color-Primary-700: #99501F;
-    --color-Primary-800: #663514;
-    --color-Primary-900: #331B0A;
+  /* Primary color */
+  --color-Primary-50: #fff3eb;
+  --color-Primary-100: #ffe7d6;
+  --color-Primary-200: #ffcead;
+  --color-Primary-300: #ffb685;
+  --color-Primary-400: #ff9d5c;
+  --color-Primary-500: #fa8232;
+  --color-Primary-600: #de732d;
+  --color-Primary-700: #99501f;
+  --color-Primary-800: #663514;
+  --color-Primary-900: #331b0a;
 
-    /* Secondary color */
-    --color-Secondary-50: #EAF6FE;
-    --color-Secondary-100: #D5EDFD;
-    --color-Secondary-200: #ABDBFA;
-    --color-Secondary-300: #81C9F8;
-    --color-Secondary-400: #57B7F5;
-    --color-Secondary-500: #2DA5F3;
-    --color-Secondary-600: #2484C2;
-    --color-Secondary-700: #1B6392;
-    --color-Secondary-800: #124261;
-    --color-Secondary-900: #092131;
+  /* Secondary color */
+  --color-Secondary-50: #eaf6fe;
+  --color-Secondary-100: #d5edfd;
+  --color-Secondary-200: #abdbfa;
+  --color-Secondary-300: #81c9f8;
+  --color-Secondary-400: #57b7f5;
+  --color-Secondary-500: #2da5f3;
+  --color-Secondary-600: #2484c2;
+  --color-Secondary-700: #1b6392;
+  --color-Secondary-800: #124261;
+  --color-Secondary-900: #092131;
 
-    /* Success color */
-    --color-Success-50: #EAF7E9;
-    --color-Success-100: #D5F0D3;
-    --color-Success-200: #ABE0A7;
-    --color-Success-300: #81D17C;
-    --color-Success-400: #57C150;
-    --color-Success-500: #2DB224;
-    --color-Success-600: #248E1D;
-    --color-Success-700: #1B6B16;
-    --color-Success-800: #12470E;
-    --color-Success-900: #092407;
+  /* Success color */
+  --color-Success-50: #eaf7e9;
+  --color-Success-100: #d5f0d3;
+  --color-Success-200: #abe0a7;
+  --color-Success-300: #81d17c;
+  --color-Success-400: #57c150;
+  --color-Success-500: #2db224;
+  --color-Success-600: #248e1d;
+  --color-Success-700: #1b6b16;
+  --color-Success-800: #12470e;
+  --color-Success-900: #092407;
 
-    /* Warning color */
-    --color-Warning-50: #FDFAE7;
-    --color-Warning-100: #FBF4CE;
-    --color-Warning-200: #F7E99E;
-    --color-Warning-300: #F3DE6D;
-    --color-Warning-400: #EFD33D;
-    --color-Warning-500: #EBC80C;
-    --color-Warning-600: #BCA00A;
-    --color-Warning-700: #8D7807;
-    --color-Warning-800: #5E5005;
-    --color-Warning-900: #2F2802;
+  /* Warning color */
+  --color-Warning-50: #fdfae7;
+  --color-Warning-100: #fbf4ce;
+  --color-Warning-200: #f7e99e;
+  --color-Warning-300: #f3de6d;
+  --color-Warning-400: #efd33d;
+  --color-Warning-500: #ebc80c;
+  --color-Warning-600: #bca00a;
+  --color-Warning-700: #8d7807;
+  --color-Warning-800: #5e5005;
+  --color-Warning-900: #2f2802;
 
-    /* Danger color */
-    --color-Danger-50: #FDEEEE;
-    --color-Danger-100: #FCDEDE;
-    --color-Danger-200: #F8BCBC;
-    --color-Danger-300: #F59B9B;
-    --color-Danger-400: #F17979;
-    --color-Danger-500: #EE5858;
-    --color-Danger-600: #BE4646;
-    --color-Danger-700: #8F3535;
-    --color-Danger-800: #5F2323;
-    --color-Danger-900: #301212;
+  /* Danger color */
+  --color-Danger-50: #fdeeee;
+  --color-Danger-100: #fcdede;
+  --color-Danger-200: #f8bcbc;
+  --color-Danger-300: #f59b9b;
+  --color-Danger-400: #f17979;
+  --color-Danger-500: #ee5858;
+  --color-Danger-600: #be4646;
+  --color-Danger-700: #8f3535;
+  --color-Danger-800: #5f2323;
+  --color-Danger-900: #301212;
 
-    /* Inter & Public Sans Family */
-    --font-inter: 'Inter', sans-serif;
-    --font-public-sans: 'Public Sans', sans-serif;
+  /* Inter & Public Sans Family */
+  --font-inter: "Inter", sans-serif;
+  --font-public-sans: "Public Sans", sans-serif;
 }
 
 @theme {
-    --color-gray-00: var(--color-gray-00);
-    --color-gray-50: var(--color-gray-50);
-    --color-gray-100: var(--color-gray-100);
-    --color-gray-200: var(--color-gray-200);
-    --color-gray-300: var(--color-gray-300);
-    --color-gray-400: var(--color-gray-400);
-    --color-gray-500: var(--color-gray-500);
-    --color-gray-600: var(--color-gray-600);
-    --color-gray-700: var(--color-gray-700);
-    --color-gray-800: var(--color-gray-800);
-    --color-gray-900: var(--color-gray-900);
-
+  --color-gray-00: var(--color-gray-00);
+  --color-gray-50: var(--color-gray-50);
+  --color-gray-100: var(--color-gray-100);
+  --color-gray-200: var(--color-gray-200);
+  --color-gray-300: var(--color-gray-300);
+  --color-gray-400: var(--color-gray-400);
+  --color-gray-500: var(--color-gray-500);
+  --color-gray-600: var(--color-gray-600);
+  --color-gray-700: var(--color-gray-700);
+  --color-gray-800: var(--color-gray-800);
+  --color-gray-900: var(--color-gray-900);
 }
 
 @theme {
-    --color-Primary-50: var(--color-Primary-50);
-    --color-Primary-100: var(--color-Primary-100);
-    --color-Primary-200: var(--color-Primary-200);
-    --color-Primary-300: var(--color-Primary-300);
-    --color-Primary-400: var(--color-Primary-400);
-    --color-Primary-500: var(--color-Primary-500);
-    --color-Primary-600: var(--color-Primary-600);
-    --color-Primary-700: var(--color-Primary-700);
-    --color-Primary-800: var(--color-Primary-800);
-    --color-Primary-900: var(--color-Primary-900);
+  --color-Primary-50: var(--color-Primary-50);
+  --color-Primary-100: var(--color-Primary-100);
+  --color-Primary-200: var(--color-Primary-200);
+  --color-Primary-300: var(--color-Primary-300);
+  --color-Primary-400: var(--color-Primary-400);
+  --color-Primary-500: var(--color-Primary-500);
+  --color-Primary-600: var(--color-Primary-600);
+  --color-Primary-700: var(--color-Primary-700);
+  --color-Primary-800: var(--color-Primary-800);
+  --color-Primary-900: var(--color-Primary-900);
 }
 
 @theme {
-    --color-Secondary-50: var(--color-Secondary-50);
-    --color-Secondary-100: var(--color-Secondary-100);
-    --color-Secondary-200: var(--color-Secondary-200);
-    --color-Secondary-300: var(--color-Secondary-300);
-    --color-Secondary-400: var(--color-Secondary-400);
-    --color-Secondary-500: var(--color-Secondary-500);
-    --color-Secondary-600: var(--color-Secondary-600);
-    --color-Secondary-700: var(--color-Secondary-700);
-    --color-Secondary-800: var(--color-Secondary-800);
-    --color-Secondary-900: var(--color-Secondary-900);
+  --color-Secondary-50: var(--color-Secondary-50);
+  --color-Secondary-100: var(--color-Secondary-100);
+  --color-Secondary-200: var(--color-Secondary-200);
+  --color-Secondary-300: var(--color-Secondary-300);
+  --color-Secondary-400: var(--color-Secondary-400);
+  --color-Secondary-500: var(--color-Secondary-500);
+  --color-Secondary-600: var(--color-Secondary-600);
+  --color-Secondary-700: var(--color-Secondary-700);
+  --color-Secondary-800: var(--color-Secondary-800);
+  --color-Secondary-900: var(--color-Secondary-900);
 }
 
 @theme {
-    --color-Success-50: var(--color-Success-50);
-    --color-Success-100: var(--color-Success-100);
-    --color-Success-200: var(--color-Success-200);
-    --color-Success-300: var(--color-Success-300);
-    --color-Success-400: var(--color-Success-400);
-    --color-Success-500: var(--color-Success-500);
-    --color-Success-600: var(--color-Success-600);
-    --color-Success-700: var(--color-Success-700);
-    --color-Success-800: var(--color-Success-800);
-    --color-Success-900: var(--color-Success-900);
+  --color-Success-50: var(--color-Success-50);
+  --color-Success-100: var(--color-Success-100);
+  --color-Success-200: var(--color-Success-200);
+  --color-Success-300: var(--color-Success-300);
+  --color-Success-400: var(--color-Success-400);
+  --color-Success-500: var(--color-Success-500);
+  --color-Success-600: var(--color-Success-600);
+  --color-Success-700: var(--color-Success-700);
+  --color-Success-800: var(--color-Success-800);
+  --color-Success-900: var(--color-Success-900);
 }
 
 @theme {
-    --color-Warning-50: var(--color-Warning-50);
-    --color-Warning-100: var(--color-Warning-100);
-    --color-Warning-200: var(--color-Warning-200);
-    --color-Warning-300: var(--color-Warning-300);
-    --color-Warning-400: var(--color-Warning-400);
-    --color-Warning-500: var(--color-Warning-500);
-    --color-Warning-600: var(--color-Warning-600);
-    --color-Warning-700: var(--color-Warning-700);
-    --color-Warning-800: var(--color-Warning-800);
-    --color-Warning-900: var(--color-Warning-900);
+  --color-Warning-50: var(--color-Warning-50);
+  --color-Warning-100: var(--color-Warning-100);
+  --color-Warning-200: var(--color-Warning-200);
+  --color-Warning-300: var(--color-Warning-300);
+  --color-Warning-400: var(--color-Warning-400);
+  --color-Warning-500: var(--color-Warning-500);
+  --color-Warning-600: var(--color-Warning-600);
+  --color-Warning-700: var(--color-Warning-700);
+  --color-Warning-800: var(--color-Warning-800);
+  --color-Warning-900: var(--color-Warning-900);
 }
 
 @theme {
-    --color-Danger-50: var(--color-Danger-50);
-    --color-Danger-100: var(--color-Danger-100);
-    --color-Danger-200: var(--color-Danger-200);
-    --color-Danger-300: var(--color-Danger-300);
-    --color-Danger-400: var(--color-Danger-400);
-    --color-Danger-500: var(--color-Danger-500);
-    --color-Danger-600: var(--color-Danger-600);
-    --color-Danger-700: var(--color-Danger-700);
-    --color-Danger-800: var(--color-Danger-800);
-    --color-Danger-900: var(--color-Danger-900);
+  --color-Danger-50: var(--color-Danger-50);
+  --color-Danger-100: var(--color-Danger-100);
+  --color-Danger-200: var(--color-Danger-200);
+  --color-Danger-300: var(--color-Danger-300);
+  --color-Danger-400: var(--color-Danger-400);
+  --color-Danger-500: var(--color-Danger-500);
+  --color-Danger-600: var(--color-Danger-600);
+  --color-Danger-700: var(--color-Danger-700);
+  --color-Danger-800: var(--color-Danger-800);
+  --color-Danger-900: var(--color-Danger-900);
 }
 
-/* ==================== Google font family Inter & Public Sans ==================== */
 @theme {
-    --font-inter: var(--font-inter);
-    --font-public-sans: var(--font-public-sans);
-
+  --font-inter: var(--font-inter);
+  --font-public-sans: var(--font-public-sans);
 }
 
-/* ==================== Google font family Inter & Public Sans ====================
+/* ==================== Google font family Inter & Public Sans ====================*
 
 /*============== Heading components ============*/
-/*============== Heading components ============*/
+
+.headign1,
+.headign2,
+.headign3,
+.headign6,
+.headign7,
+.display1,
+.display2,
+.display3,
+.display4,
+.display5,
+.label1,
+.label2,
+.label3,
+.label4,
+.label5,
+.body-xxl-400,
+.body-xl-400,
+.body-xl-500,
+.body-xl-600,
+.body-large-400,
+.body-large-500,
+.body-large-600,
+.body-medium-400,
+.body-medium-500,
+.body-medium-600,
+.body-small-400,
+.body-small-500,
+.body-small-600,
+.body-tiny-400,
+.body-tiny-500,
+.body-tiny-600,
+.body-xs-400,
+.body-xs-500,
+.body-xs-600 {
+  font-family: var(--font-public-sans);
+  letter-spacing: 0em;
+}
 
 .headign1 {
-    font-family: var(--font-public-sans);
-    font-size: 32px;
-    font-weight: 600;
-    /* semi-bold */
-    line-height: 40px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 32px;
+  font-weight: 600;
+  /* semi-bold */
+  line-height: 40px;
+  letter-spacing: 0em;
 }
 
 .headign2 {
-    font-family: var(--font-public-sans);
-    font-size: 28px;
-    font-weight: 600;
-    /* semi-bold */
-    line-height: 32px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 28px;
+  font-weight: 600;
+  /* semi-bold */
+  line-height: 32px;
+  letter-spacing: 0em;
 }
 
 .headign3 {
-    font-family: var(--font-public-sans);
-    font-size: 24px;
-    font-weight: 600;
-    /* semi-bold */
-    line-height: 32px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 24px;
+  font-weight: 600;
+  /* semi-bold */
+  line-height: 32px;
+  letter-spacing: 0em;
 }
 
 .headign6 {
-    font-family: var(--font-public-sans);
-    font-size: 16px;
-    font-weight: 700;
-    /* bold */
-    line-height: 56px;
-    letter-spacing: 1.2%;
+  font-family: var(--font-public-sans);
+  font-size: 16px;
+  font-weight: 700;
+  /* bold */
+  line-height: 56px;
+  letter-spacing: 1.2%;
 }
 
 .headign7 {
-    font-family: var(--font-public-sans);
-    font-size: 14px;
-    font-weight: 700;
-    /* bold */
-    line-height: 48px;
-    letter-spacing: 1.2%;
+  font-family: var(--font-public-sans);
+  font-size: 14px;
+  font-weight: 700;
+  /* bold */
+  line-height: 48px;
+  letter-spacing: 1.2%;
 }
 
 /*============== Display components ============*/
 
 .display1 {
-    font-family: var(--font-public-sans);
-    font-size: 64px;
-    font-weight: 600;
-    /* semi-bold */
-    line-height: 72px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 64px;
+  font-weight: 600;
+  /* semi-bold */
+  line-height: 72px;
+  letter-spacing: 0em;
 }
 
 .display2 {
-    font-family: var(--font-public-sans);
-    font-size: 56px;
-    font-weight: 600;
-    /* semi-bold */
-    line-height: 64px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 56px;
+  font-weight: 600;
+  /* semi-bold */
+  line-height: 64px;
+  letter-spacing: 0em;
 }
 
 .display3 {
-    font-family: var(--font-public-sans);
-    font-size: 48px;
-    font-weight: 600;
-    /* semi-bold */
-    line-height: 56px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 48px;
+  font-weight: 600;
+  /* semi-bold */
+  line-height: 56px;
+  letter-spacing: 0em;
 }
 
 .display4 {
-    font-family: var(--font-public-sans);
-    font-size: 40px;
-    font-weight: 600;
-    /* semi-bold */
-    line-height: 48px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 40px;
+  font-weight: 600;
+  /* semi-bold */
+  line-height: 48px;
+  letter-spacing: 0em;
 }
 
 .display5 {
-    font-family: var(--font-public-sans);
-    font-size: 36px;
-    font-weight: 600;
-    /* semi-bold */
-    line-height: 44px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 36px;
+  font-weight: 600;
+  /* semi-bold */
+  line-height: 44px;
+  letter-spacing: 0em;
 }
 
 /*============== Label components ============*/
 
 .label1 {
-    font-family: var(--font-public-sans);
-    font-size: 18px;
-    font-weight: 500;
-    /* medium */
-    line-height: 28px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 18px;
+  font-weight: 500;
+  /* medium */
+  line-height: 28px;
+  letter-spacing: 0em;
 }
 
 .label2 {
-    font-family: var(--font-public-sans);
-    font-size: 16px;
-    font-weight: 500;
-    /* medium */
-    line-height: 24px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 16px;
+  font-weight: 500;
+  /* medium */
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 .label3 {
-    font-family: var(--font-public-sans);
-    font-size: 14px;
-    font-weight: 500;
-    /* medium */
-    line-height: 20px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 14px;
+  font-weight: 500;
+  /* medium */
+  line-height: 20px;
+  letter-spacing: 0em;
 }
 
 .label4 {
-    font-family: var(--font-public-sans);
-    font-size: 12px;
-    font-weight: 500;
-    /* medium */
-    line-height: 20px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 12px;
+  font-weight: 500;
+  /* medium */
+  line-height: 20px;
+  letter-spacing: 0em;
 }
 
 .label5 {
-    font-family: var(--font-public-sans);
-    font-size: 11px;
-    font-weight: 500;
-    /* medium */
-    line-height: 16px;
-    letter-spacing: 0em;
+  font-family: var(--font-public-sans);
+  font-size: 11px;
+  font-weight: 500;
+  /* medium */
+  line-height: 16px;
+  letter-spacing: 0em;
 }
 
 /*============== Font components ============*/
 
 .body-xxl-400 {
-    font-family: var(--font-public-sans);
-    font-weight: 400;
-    /* normal */
-    font-size: 24px;
-    line-height: 32px;
+  font-family: var(--font-public-sans);
+  font-weight: 400;
+  /* normal */
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .body-xl-400 {
-    font-family: var(--font-public-sans);
-    font-weight: 400;
-    /* normal */
-    font-size: 20px;
-    line-height: 28px;
+  font-family: var(--font-public-sans);
+  font-weight: 400;
+  /* normal */
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .body-xl-500 {
-    font-family: var(--font-public-sans);
-    font-weight: 500;
-    /* medium */
-    font-size: 20px;
-    line-height: 28px;
+  font-family: var(--font-public-sans);
+  font-weight: 500;
+  /* medium */
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .body-xl-600 {
-    font-family: var(--font-public-sans);
-    font-weight: 600;
-    /* semi-bold */
-    font-size: 20px;
-    line-height: 28px;
+  font-family: var(--font-public-sans);
+  font-weight: 600;
+  /* semi-bold */
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .body-large-400 {
-    font-family: var(--font-public-sans);
-    font-weight: 400;
-    /* normal */
-    font-size: 18px;
-    line-height: 24px;
+  font-family: var(--font-public-sans);
+  font-weight: 400;
+  /* normal */
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .body-large-500 {
-    font-family: var(--font-public-sans);
-    font-weight: 500;
-    /* medium */
-    font-size: 18px;
-    line-height: 24px;
+  font-family: var(--font-public-sans);
+  font-weight: 500;
+  /* medium */
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .body-large-600 {
-    font-family: var(--font-public-sans);
-    font-weight: 600;
-    /* semi-bold */
-    font-size: 18px;
-    line-height: 24px;
+  font-family: var(--font-public-sans);
+  font-weight: 600;
+  /* semi-bold */
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .body-medium-400 {
-    font-family: var(--font-public-sans);
-    font-weight: 400;
-    /* normal */
-    font-size: 16px;
-    line-height: 24px;
+  font-family: var(--font-public-sans);
+  font-weight: 400;
+  /* normal */
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .body-medium-500 {
-    font-family: var(--font-public-sans);
-    font-weight: 500;
-    /* medium */
-    font-size: 16px;
-    line-height: 24px;
+  font-family: var(--font-public-sans);
+  font-weight: 500;
+  /* medium */
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .body-medium-600 {
-    font-family: var(--font-public-sans);
-    font-weight: 600;
-    /* semi-bold */
-    font-size: 16px;
-    line-height: 24px;
+  font-family: var(--font-public-sans);
+  font-weight: 600;
+  /* semi-bold */
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .body-small-400 {
-    font-family: var(--font-public-sans);
-    font-weight: 400;
-    /* normal */
-    font-size: 14px;
-    line-height: 20px;
+  font-family: var(--font-public-sans);
+  font-weight: 400;
+  /* normal */
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .body-small-500 {
-    font-family: var(--font-public-sans);
-    font-weight: 500;
-    /* medium */
-    font-size: 14px;
-    line-height: 20px;
+  font-family: var(--font-public-sans);
+  font-weight: 500;
+  /* medium */
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .body-small-600 {
-    font-family: var(--font-public-sans);
-    font-weight: 600;
-    /* semi-bold */
-    font-size: 14px;
-    line-height: 20px;
+  font-family: var(--font-public-sans);
+  font-weight: 600;
+  /* semi-bold */
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .body-tiny-400 {
-    font-family: var(--font-public-sans);
-    font-weight: 400;
-    /* normal */
-    font-size: 12px;
-    line-height: 16px;
+  font-family: var(--font-public-sans);
+  font-weight: 400;
+  /* normal */
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .body-tiny-500 {
-    font-family: var(--font-public-sans);
-    font-weight: 500;
-    /* medium */
-    font-size: 12px;
-    line-height: 16px;
+  font-family: var(--font-public-sans);
+  font-weight: 500;
+  /* medium */
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .body-tiny-600 {
-    font-family: var(--font-public-sans);
-    font-weight: 600;
-    /* semi-bold */
-    font-size: 12px;
-    line-height: 16px;
+  font-family: var(--font-public-sans);
+  font-weight: 600;
+  /* semi-bold */
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .body-xs-400 {
-    font-family: var(--font-public-sans);
-    font-weight: 400;
-    /* normal */
-    font-size: 11px;
-    line-height: 12px;
+  font-family: var(--font-public-sans);
+  font-weight: 400;
+  /* normal */
+  font-size: 11px;
+  line-height: 12px;
 }
 
 .body-xs-500 {
-    font-family: var(--font-public-sans);
-    font-weight: 500;
-    /* medium */
-    font-size: 11px;
-    line-height: 12px;
+  font-family: var(--font-public-sans);
+  font-weight: 500;
+  /* medium */
+  font-size: 11px;
+  line-height: 12px;
 }
 
 .body-xs-600 {
-    font-family: var(--font-public-sans);
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 12px;
+  font-family: var(--font-public-sans);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 12px;
 }
